@@ -8,37 +8,6 @@ from jt_password_generator.managers import PasswordManager, SeedManager
 # endregion: Global variables
 
 
-def validate_options(options):
-    """
-    Validate Argument Options
-
-    Args:
-        options: ArgumentParser option
-    """
-    seeds = [
-        options.lowers,
-        options.uppers,
-        options.numbers,
-        options.logograms,
-        options.punctuations,
-        options.quotes,
-        options.dashes,
-        options.slashes,
-        options.operators,
-        options.braces,
-    ]
-
-    if not any(seeds):
-        raise ValueError(
-            (
-                "At least one seed character option must be specified. "
-                "Specify any of the following seeds: lowers, uppers, "
-                "numbers, logograms, punctuations, quotes, dashes, slashes, "
-                "operators or braces"
-            )
-        )
-
-
 def main(options):
     """
     Password Generator
@@ -46,15 +15,12 @@ def main(options):
     Args:
         options: ArgumentParser option
     """
-    # TODO Add unit testing
     # TODO Add GitHub action workflows
     # TODO Add profile setup options
     # TODO Add profile remove options
     # TODO Add profile call options
 
     system("clear")
-
-    validate_options(options)
 
     seed_manager = SeedManager(
         options.lowers,
@@ -109,5 +75,4 @@ if __name__ == "__main__":
 
     options = p.parse_args()
 
-    main(options)
     main(options)
