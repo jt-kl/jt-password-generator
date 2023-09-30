@@ -65,7 +65,7 @@ class SeedManager:
         self.inclusions = list(inclusions)
         self.exclusions = list(exclusions)
 
-    def generate_seed(self) -> set:
+    def generate_seed(self) -> set[str]:
         """
         Generate Character Seeds
         """
