@@ -11,7 +11,7 @@ classifiers = [
 description = "JT Password Generator"
 dynamic = ["version", "dependencies"]
 name = "jt_password_generator"
-requires-python = ">3.10.6"
+requires-python = ">3.10.11"
 
 
 [tool.setuptools.dynamic]
