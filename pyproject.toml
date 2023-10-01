@@ -24,8 +24,12 @@ addopts = "-vvv --cov-report=term-missing --cov=jt_password_generator"
 pythonpath = ["."]
 testpaths = ["tests"]
 
-[tool.black]
-line-length = 119
+# [tool.black]
+# line-length = 119
+
+[tool.ruff]
+select=["F401","E711","E713"]
+line-length=119
 
 [tool.mypy]
 check_untyped_defs = true
