@@ -1,5 +1,8 @@
 ## Testing - Getting Started
 
+![tests]("https://github.com/jt-kl/jt-password-generator/actions/workflows/hosted.yml/badge.svg")
+![coverage](./tests/coverage.svg)
+
 ```shell
 #!/bin/bash
 $ cd jt_password_generator

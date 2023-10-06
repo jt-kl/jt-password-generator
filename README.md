@@ -1,5 +1,6 @@
 # jt-password-generator
 
+![tests]("https://github.com/jt-kl/jt-password-generator/actions/workflows/hosted.yml/badge.svg")
 ![coverage](./tests/coverage.svg)
 
 ## Getting Started
