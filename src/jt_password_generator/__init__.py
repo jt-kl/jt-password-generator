@@ -1,1 +1,1 @@
-from ._version import VERSION
+VERSION = "0.0.0"
