@@ -9,6 +9,7 @@
 $ cd jt_password_generator
 $ python3 -m venv .env
 $ source .env/bin/activate
+$ python3 -m pip install --upgrade pip
 $ pip3 install wheel --no-cache-dir
 $ pip3 install -r requirements-dev.txt --no-cache-dir
 $ pip3 install redist/* # If applicable
