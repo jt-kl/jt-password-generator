@@ -1,5 +1,7 @@
 # jt-password-generator
 
+![coverage](./tests/coverage.svg)
+
 ## Getting Started
 
 ### Development
