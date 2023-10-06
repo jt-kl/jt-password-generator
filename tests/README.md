@@ -51,3 +51,10 @@ $ clear; mypy # Standard checks respecting configs from [pyproject.tool.mypy]
 $ clear; mypy ./src # Specific compliance checks on "src" directory
 
 ```
+
+#### Coverage Badge Generation
+
+```shell
+#!/bin/bash
+$ coverage-badge -f -o ./tests/coverage.svg # Generate and park coverage badge in tests directory
+```
