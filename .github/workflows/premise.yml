@@ -1,0 +1,38 @@
+name: "On-Premise Runner (Test)"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    branches: [main]
+
+permissions:
+  contents: "read"
+
+env:
+  BASE_DATA_DIRECTORY: "/srv/data/"
+  BASE_SCRIPT_DIRECTORY: "/srv/scripts/"
+  BASE_STAGING_DIRECTORY: "/srv/staging/"
+  REPOSITORY_NAME: "jt-password-generator"
+
+jobs:
+  test:
+    runs-on: ["jthodt"]
+    steps:
+      - uses: "actions/checkout@v3"
+      - name: "Set Up Python v3.10.12"
+        uses: "actions/setup-python@v4"
+        with:
+          python-version: "3.10.12"
+      - name: "Install Package Dependencies"
+        run: |
+          cd $GITHUB_WORKSPACE
+          echo -e "Current working directory: $(pwd)"
+          echo -e "--------- Directory Contents ---------\n"
+          ls -la
+          echo -e "\n--------- Directory Contents ---------"
+    #   - name: "Invoke Tests"
+    #     run: |
+    #       pytest
