@@ -11,20 +11,19 @@ classifiers = [
 description = "JT Password Generator"
 dynamic = ["version", "dependencies"]
 name = "jt_password_generator"
-requires-python = ">3.10.11"
-
+requires-python = ">=3.10.12"
 
 [tool.setuptools.dynamic]
-# dependencies = { file=["requirements.txt"] }
+dependencies = { file = ["requirements-prod.txt"] }
 version = { attr = "jt_password_generator.VERSION" }
-
-[tool.ruff]
-line-length = 119
-select = ["F401", "E711", "E713"]
 
 [tool.pytest.ini_options]
 addopts = "-vvv -s --cov-report=term-missing --cov=jt_password_generator"
 testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 119
+select = ["F401", "E711", "E713"]
 
 [tool.mypy]
 check_untyped_defs = true
