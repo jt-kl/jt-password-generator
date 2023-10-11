@@ -39,7 +39,7 @@ Create a redistributable wheel file
 # Build the wheel file and on completion, distribute the wheel file located in
 # the "dist" directory. The "build" and "dist" directory can be safely removed
 
-$ python3 upgrade.py <options> # Updates package version number
+$ python3 scripts/upgrade.py <options> # Updates package version number
 $ bash build.sh
 
 ```
