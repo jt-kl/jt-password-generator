@@ -1,6 +1,7 @@
 ## Testing - Getting Started
 
-![tests](https://github.com/jt-kl/jt-password-generator/actions/workflows/premise.yml/badge.svg)
+![tests](https://github.com/jt-kl/jt-password-generator/actions/workflows/hosted_test.yml/badge.svg)
+![tests](https://github.com/jt-kl/jt-password-generator/actions/workflows/premise_test.yml/badge.svg)
 ![coverage](./coverage.svg)
 
 ```shell
