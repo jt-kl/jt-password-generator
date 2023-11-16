@@ -36,7 +36,7 @@ def main(options):
         inclusions=options.inclusions,
         exclusions=options.exclusions,
     )
-    password_manager = PasswordManager(seed_manager)
+    password_manager = PasswordManager(seed_manager, options.length)
     passwords = password_manager.generate_password()
 
     pp = PrettyPrinter(indent=2, sort_dicts=False)
@@ -76,3 +76,5 @@ if __name__ == "__main__":
     options = p.parse_args()
 
     main(options)
+
+    # ? service.py --lowers --uppers --length=4
