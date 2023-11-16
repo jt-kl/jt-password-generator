@@ -42,6 +42,6 @@ Create a redistributable wheel file
 # the "dist" directory. The "build" and "dist" directory can be safely removed
 
 $ python3 scripts/upgrade.py <options> # Updates package version number
-$ bash build.sh
+$ bash scripts/build.sh
 
 ```
